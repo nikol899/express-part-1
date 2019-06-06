@@ -10,4 +10,14 @@ export class CartService {
   getAllItems(){
     return this.http.get("/api/cartitems",{responseType:"json"});
   }
+  addItem(item){
+    console.log(item);
+    return this.http.post("/api/cartitems", item.value,{responseType:"json"});
+  }
+  removeItem(id){
+    return this.http.delete(`/api/cartitems/${id}`,{responseType:"json"});
+  }
+  updateItem(item){
+    return this.http.put(`/api/cartitems/${item.id}`,item,{responseType:"json"});
+  }
 }

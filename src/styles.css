@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+html{
+    /* background-image: url("src\images\mercedes-benz.jpg")  ;
+    background-size:cover; */
+    margin:0;
+    background-color: #cee7e8;
+    
+}
+body{
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* color:white; */
+    
+}
+button{
+    background-color: #a2c3c4;
+    border-style: none;
+    border-radius:5px;
+}
+button:hover{
+    background-color:#94e0c5;
+}
+section{
+    /* border:1px red solid; */
+    width:507px;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    border:1px solid black;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+}
+div{
+    padding-left:20px;
+    height: 144px;
+    border-bottom:1px grey solid;
+}
+h2:hover{
+    color:#94e0c5;
+}
+h2{
+    cursor:pointer;
+}
+.editForm{
+    display: flex;
+    justify-content: column;
+    flex-direction:column;
+    transform: translate(237px, -134px);
+    width:50%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.addform > input{
+    width:63px;
+}
+.fa-trash{
+    padding-left:70px;
+}
+
